@@ -1,0 +1,33 @@
+<div class="card m-2" style="height: 95vh;">
+    <div class="card-header">
+        <h1 class="m-0">Instructions</h1>
+    </div>
+    <div class="card-body">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th scope="col">No of Questions</th>
+                            <th scope="col">Total Marks</th>
+                            <th scope="col">Passing Marks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{testDetails?.numberOfQuestions}}</td>
+                            <td>{{testDetails?.totalMarks}}</td>
+                            <td>{{testDetails?.passingMarks}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="my-3">
+                {{testDetails?.instructions}}
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary" (click)="startTest()">Start Test</button>
+            </div>
+        </div>
+    </div>
+</div>
